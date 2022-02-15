@@ -4,7 +4,7 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -52,6 +52,6 @@ app.post("/", (req, res) => {
     })
 })
 
-app.listen(port, () => {
+app.listen(port || 3001, () => {
     console.log(`Example app listening on port ${port}`)
 })
