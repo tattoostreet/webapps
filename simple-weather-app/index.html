@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <h1>My Simple Weather App</h1>
+
+    <form action="/" method="post">
+            <label for="city">Choose a city:</label>
+            <select name="city" id="cities">
+                <option value="Manila">Manila</option>
+                <option value="Singapore">Singapore</option>
+                <option value="New York">New York</option>
+                <option value="Austin">Austin</option>
+                <option value="San Francisco">San Francisco</option>
+            </select>
+            <label for="unit">Choose Unit:</label>
+            <select name="unit" id="units">
+                <option value="default">Default (Kelvin)</option>
+                <option value="metric">Metric (Celcius)</option>
+                <option value="imperial">Imperial (Farenheit)</option>
+            </select>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
