@@ -42,6 +42,10 @@ app.post("/", (req, res) => {
             // console.log(data);
             let weatherData = JSON.parse(data);
             res.setHeader("Content-Type", "text/html")
+            res.write(`<meta charset="UTF-8">`)
+            res.write(`<meta http-equiv="X-UA-Compatible" content="IE=edge">`)
+            res.write(`<meta name="viewport" content="width=device-width, initial-scale=1.0">`)
+            res.write(`<title>Weather App</title>`)
             res.write(`<head><link rel="stylesheet" href="css/styles.css"></head>`)
             res.write(`<h1> The current temperature in <span>${weatherData.name}</span> is <span>${weatherData.main.temp}</span> degrees ${unitName}.</h1>`);
             res.write(`<p>Current weather: <span>${weatherData.weather[0].description}</span></p>`);

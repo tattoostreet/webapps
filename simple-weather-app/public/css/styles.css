@@ -50,3 +50,17 @@ form {
     border: none;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    form {
+        width: 60%;
+        height: 30%;
+        justify-content: space-around;
+    }
+}
