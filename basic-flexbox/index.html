@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Basic Flexbox</h1>
+
+    <h3>Random Tips</h3>
+    <ul>
+        <li><span>div.item*3{Items $}</span> - Create multiple HTML elements with defined class </li>
+        <li><span>diplay: float;</span> - legacy method before flexbox</li>
+        <li><span>display: flex; justify-content: center; align-items: center;</span> - center a div by adding flex to
+            items (nested flex)</li>
+        <li><span>.container :nth-child()</span></li>
+        <li><span>justify-content vs align-items</span> - justify is always relative to main axis (vertical) while
+            align-items is with cross axis (horizontal)</li>
+        <li> <span>flex-start vs start</span> - flex-start takes into account the presence of the -reverse values of the
+            flex direction, while start does not</li>
+    </ul>
+    <div class="container">
+        <div class="outer-container">
+            <div class="item-p">
+                <p>1. <span>display: flex;</span> - in combination with 'float' and 'position', determines the type of
+                    box or boxes that are generated for an element.</p>
+            </div>
+            <div class="container1">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+        </div>
+
+        <div class="outer-container">
+            <div class="item-p">
+                <p>2. <span>justify-content: start | center | end;</span> - aligns flex items along the main axis of the
+                    current line of the flex container. </p>
+            </div>
+            <div class="container2">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+        </div>
+
+        <div class="outer-container">
+            <div class="item-p">
+                <p>3. <span>justify-content: space-around | space-between | space-evenly;</span> - adds equal space
+                    around (all sides)
+                    the div
+                    or
+                    space between items only..... </p>
+            </div>
+            <div class="container3">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+        </div>
+        <div class="outer-container">
+            <div class="item-p">
+                <p>4. <span>align-items: start | center | end;</span> - aligns flex items along the cross axis of the
+                    current line
+                    of the flex container.</p>
+            </div>
+            <div class="container4">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+        </div>
+        <div class="outer-container">
+            <div class="item-p">
+                <p>5. <span>align-self: start | center | end;</span> - allows the default alignment along the cross axis
+                    to be
+                    overridden for individual flex items.</p>
+            </div>
+            <div class="container5">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+        </div>
+
+        <div class="outer-container">
+            <div class="item-p">
+                <p>6. <span>flex-direction: row | row-reverse | column | column-reverse;</span> - specifies how flex
+                    items are
+                    placed in the flex container, by setting the direction of the flex container’s main axis..</p>
+            </div>
+            <div class="container6">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+        </div>
+
+        <div class="outer-container">
+            <div class="item-p">
+                <p>7. <span>flex-direction: column + align-items | start | center | end;</span> - aligns flex items
+                    along the cross
+                    axis of the current line of the flex container.</p>
+            </div>
+            <div class="container7">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+        </div>
+
+        <div class="outer-container">
+            <div class="item-p">
+                <p>8. <span>flex-direction: column + justify-content | start | center | end;</span> - aligns flex items
+                    along the
+                    main axis of the current line of the flex container..</p>
+            </div>
+            <div class="container8">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+        </div>
+
+        <div class="outer-container">
+            <div class="item-p">
+                <p>9. <span>flex-wrap: wrap;</span> - controls whether the flex container is single-line or multi-line,
+                    and the
+                    direction of the cross-axis, which determines the direction new lines are stacked in.</p>
+            </div>
+            <div class="container9">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+                <div class="item">9</div>
+                <div class="item">10</div>
+                <div class="item">11</div>
+                <div class="item">12</div>
+                <div class="item">13</div>
+                <div class="item">14</div>
+                <div class="item">15</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+/* ----------- GLOBAL SETTINGS ----------- */
+* {
+    font-family: 'Prompt', sans-serif;
+    font-size: 1rem;
+    /* box-sizing: border-box;
+    margin: 0;
+    padding: 0; */
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+body {
+    background-color: #e6d2d5;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #d8c0c4 74%);
+
+}
+
+span {
+    color: rgb(89, 122, 160);
+    font-weight: bold;
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    color: rgb(228, 227, 236);
+    margin: 10px;
+    background-color: rgb(152, 155, 201);
+    border-radius: 20%;
+    font-size: 3rem;
+    overflow: hidden;
+
+    /* -------- CENTER A DIV! =) -------- */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(1) {
+    background-color: rgb(223, 136, 226);
+}
+
+.item:nth-child(2) {
+    background-color: rgb(79, 201, 126);
+}
+
+.item:nth-child(3) {
+    background-color: rgb(240, 149, 75);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.outer-container {
+    border-radius: 5%;
+    padding: 10px;
+    display: flex;
+    background-color: rgb(228, 228, 224);
+    margin: 2%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 15px rgba(160, 126, 98, 0.589);
+}
+
+.item-p {
+    margin: 0;
+}
+
+/* -------------- CONTAINER 1 -------------- */
+.container1 {
+    border-radius: 5%;
+    height: 300px;
+    display: flex;
+    background-color: rgb(219, 207, 218);
+}
+
+/* -------------- CONTAINER 2 -------------- */
+.container2 {
+    border-radius: 5%;
+    height: 300px;
+    display: flex;
+    background-color: rgb(219, 207, 218);
+    justify-content: start;
+    animation: animate-container2 3s infinite;
+}
+
+/* -------------- CONTAINER 3 -------------- */
+.container3 {
+    border-radius: 5%;
+    height: 300px;
+    display: flex;
+    background-color: rgb(219, 207, 218);
+    justify-content: space-around;
+    animation: animate-container3 3s infinite;
+}
+
+/* -------------- CONTAINER 4 -------------- */
+.container4 {
+    border-radius: 5%;
+    height: 300px;
+    display: flex;
+    background-color: rgb(219, 207, 218);
+    animation: animate-container4 3s infinite;
+}
+
+/* -------------- CONTAINER 5 -------------- */
+.container5 {
+    border-radius: 5%;
+    height: 300px;
+    display: flex;
+    background-color: rgb(219, 207, 218);
+}
+
+.container5 .item:nth-child(1) {
+    align-self: start;
+}
+
+.container5 .item:nth-child(2) {
+    align-self: center;
+}
+
+.container5 .item:nth-child(3) {
+    align-self: end;
+}
+
+/* -------------- CONTAINER 6 -------------- */
+
+.container6 {
+    border-radius: 5%;
+    height: 300px;
+    display: flex;
+    background-color: rgb(219, 207, 218);
+    animation: animate-container6 4s infinite;
+}
+
+/* -------------- CONTAINER 7 -------------- */
+
+.container7 {
+    border-radius: 5%;
+    height: 300px;
+    display: flex;
+    background-color: rgb(219, 207, 218);
+    flex-direction: column;
+    animation: animate-container4 4s infinite;
+}
+
+/* -------------- CONTAINER 8 -------------- */
+
+.container8 {
+    border-radius: 5%;
+    height: 300px;
+    display: flex;
+    background-color: rgb(219, 207, 218);
+    flex-direction: column;
+    animation: animate-container2 3s infinite;
+}
+
+/* -------------- CONTAINER 9 -------------- */
+
+.container9 {
+    border-radius: 5%;
+    height: 300px;
+    display: flex;
+    background-color: rgb(219, 207, 218);
+    flex-wrap: wrap;
+}
+
+/* -------------- ANIMATIONS -------------- */
+
+@keyframes animate-container2 {
+
+    from, to,
+    30% {
+        justify-content: start;
+    }
+
+    60% {
+        justify-content: center;
+    }
+
+    100% {
+        justify-content: end;
+    }
+}
+
+@keyframes animate-container3 {
+
+    from, to,
+    30% {
+        justify-content: space-between;
+    }
+
+    60% {
+        justify-content: space-around;
+    }
+
+    100% {
+        justify-content: space-evenly;
+    }
+}
+
+@keyframes animate-container4 {
+
+    from, to,
+    30% {
+        align-items: start;
+        ;
+    }
+
+    60% {
+        align-items: center;
+        ;
+    }
+
+    100% {
+        align-items: end;
+    }
+}
+
+@keyframes animate-container6 {
+
+    from, to,
+    25% {
+        flex-direction: row;
+    }
+
+    50% {
+        flex-direction: row-reverse;
+    }
+
+    75% {
+        flex-direction: column;
+    }
+
+    100% {
+        flex-direction: column-reverse;
+    }
+}

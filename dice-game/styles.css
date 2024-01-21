@@ -1,0 +1,97 @@
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.dice {
+    text-align: center;
+    display: inline-block;
+}
+
+body {
+    background-color: #33363b;
+}
+
+button {
+    font-size: 5rem;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+button:hover {
+    font-size: 5.5rem;
+    background-color: transparent;
+    border: none;
+}
+
+.buttonclick {
+    animation: animatedice .30s ease-out;
+}
+
+p {
+    font-size: 2rem;
+    color: #4ECCA3;
+    font-family: 'Indie Flower', cursive;
+}
+
+img {
+    width: 60%;
+}
+
+footer {
+    margin-top: 50%;
+    color: #EEEEEE;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+/* Animations */
+
+@keyframes animatedice {
+    /* dice animation */
+
+    from,
+    to,
+
+    10% {
+        transform: rotate(36deg) translateY(05px);
+    }
+
+    20% {
+        transform: rotate(72deg) translateY(05px);
+    }
+
+    30% {
+        transform: rotate(108deg) translateY(05px);
+    }
+
+    40% {
+        transform: rotate(144deg) translateX(05px);
+    }
+
+    50% {
+        transform: rotate(180deg) translateX(05px);
+    }
+
+    60% {
+        transform: rotate(216deg) translateZ(05px);
+    }
+
+    70% {
+        transform: rotate(252deg) translateY(05px);
+    }
+
+    80% {
+        transform: rotate(288deg) translateY(05px);
+    }
+
+    90% {
+        transform: rotate(324deg) translateY(05px);
+    }
+
+    100% {
+        transform: rotate(360deg) translateY(0px);
+    }
+}
